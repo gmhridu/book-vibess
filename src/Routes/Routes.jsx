@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         path: "/book-details/:id",
         element: <ListedBook />,
         loader: () =>
-          fetch("https://mocki.io/v1/6a2917ec-350e-4d68-a091-752ef6071456"),
+          fetch("/books.json"),
       },
       {
         path: "/pages",

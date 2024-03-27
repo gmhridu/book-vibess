@@ -10,8 +10,7 @@ const ListedBook = () => {
 
   const [details, setDetails] = useState(null);
 
-  
-  const singleData = data?.find((item) => item.id === id);
+  const singleData = data?.filter((item) => item.id === id);
   console.log("Single data:", singleData);
 
   if (singleData) {
