@@ -1,9 +1,9 @@
-import React from 'react';
-import {ClipLoader} from 'react-spinners'
+import React from "react";
+import { ClipLoader } from "react-spinners";
 
 const Loader = () => {
   return (
-    <div className='flex flex-col justify-center items-center h-screen'>
+    <div className="flex flex-col justify-center items-center h-screen">
       <ClipLoader size={85} />
     </div>
   );

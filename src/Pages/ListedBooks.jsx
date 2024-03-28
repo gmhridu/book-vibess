@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
-
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const ListedBooks = () => {
   const [tabIndex, setTabIndex] = useState(0);
+  const location = useLocation();
+  const { singleData } = location?.state || {};
+  console.log(singleData);
+
   return (
     <div className="container mx-auto">
       <div className="bg-[#1313130D] text-center p-8 rounded-xl my-8">

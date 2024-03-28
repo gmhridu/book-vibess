@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const ErrorMessage = () => {
   return (
@@ -16,7 +16,7 @@ const ErrorMessage = () => {
             But dont worry, you can find plenty of other things on our homepage.
           </p>
           <Link
-            to='/'
+            to="/"
             className="px-8 py-3 font-semibold rounded bg-violet-600 text-gray-50"
           >
             Back to homepage

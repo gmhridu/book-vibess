@@ -1,6 +1,6 @@
-import React from 'react';
-import bgImg from '../../assets/pngwing.png'
-import { Link } from 'react-router-dom';
+import React from "react";
+import bgImg from "../../assets/pngwing.png";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
