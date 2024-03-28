@@ -1,33 +1,31 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { FaRegStar } from "react-icons/fa";
-import { Link } from 'react-router-dom';
-import Loader from '../Loader/Loader';
+import { Link } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 const SingleBook = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
-  
 
-useEffect(() => {
-  const fetchData = async () => {
-    try {
-      const response = await fetch("/books.json");
-      const data = await response.json();
-      setBooks(data);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/books.json");
+        const data = await response.json();
+        setBooks(data);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  fetchData();
-}, []);
-  
+    fetchData();
+  }, []);
+
   if (loading) {
     return <Loader />;
   }
-
 
   return (
     <div className="grid px-2 md:px-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">

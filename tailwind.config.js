@@ -16,5 +16,11 @@ export default {
       },
     },
   },
+  daisyui: {
+    styled: true,
+    theme: [],
+    rtl: false,
+    
+  },
   plugins: [require("daisyui")],
 };
